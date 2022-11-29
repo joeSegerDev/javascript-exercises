@@ -1,10 +1,16 @@
 const removeFromArray = function(numArray) {
 
-    let index = numArray.indexOf(arguments[1]);
- 
-    numArray.splice(index,1);
+    for (let i = 1; i < arguments.length; i++){
+        
+        let index = numArray.indexOf(arguments[i]);
+        
+        if (index >=0){
+            numArray.splice(index,1);
+        }
 
-    return(numArray);
+    }
+
+    return(numArray);    
 
 };
 
