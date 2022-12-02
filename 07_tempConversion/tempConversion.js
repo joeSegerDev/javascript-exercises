@@ -6,6 +6,8 @@ const ftoc = function(temp) {
 
 const ctof = function(temp) {
 
+  return Math.round(((temp * (9/5)) + 32) * 10) / 10
+
 };
 
 // Do not edit below this line
